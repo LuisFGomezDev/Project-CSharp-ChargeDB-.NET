@@ -1,0 +1,51 @@
+<asp:ImageButton  runat="server" Height="45px" 
+ ImageUrl="~/CapaVista/Imagenes/Abrir.png" ToolTip="Abrir" Width="45px" SkinID="FuncionAbrir"/>
+
+<asp:Image runat="server" Height="107px" 
+ ImageUrl="~/CapaVista/Imagenes/LogonombreDoctor.jpg" Width="158px" SkinID="LogoDoctor"/>
+
+<asp:Image runat="server" Height="34px" 
+ ImageUrl="~/CapaVista/Imagenes/Logo Presentacion.bmp" Width="160px" SkinID="LogoCopyRight"/>
+
+
+<asp:ImageButton  runat="server" Height="45px" 
+ ImageUrl="~/CapaVista/Imagenes/Eliminar.png" ToolTip="Borrar" Width="45px" SkinID="FuncionBorrar"/>
+
+<asp:ImageButton  runat="server" Height="45px" 
+ ImageUrl="~/CapaVista/Imagenes/Buscar2.png" ToolTip="Consultar" Width="45px" SkinID="FuncionConsultar"/>
+
+<asp:ImageButton  runat="server" Height="45px" 
+ ImageUrl="~/CapaVista/Imagenes/Imprimir.png" ToolTip="Imprimir" Width="45px" SkinID="FuncionImprimir"/>
+
+<asp:ImageButton  runat="server" Height="45px" 
+ ImageUrl="~/CapaVista/Imagenes/Grabar.png" ToolTip="Grabar Datos" Width="45px" SkinID="FuncionGrabar"/>
+
+<asp:ImageButton  runat="server" Height="45px" 
+ ImageUrl="~/CapaVista/Imagenes/Modificar_Datos.png" ToolTip="Modificar Datos" Width="45px" SkinID="FuncionModificar"/>
+
+<asp:ImageButton  runat="server" Height="45px" 
+ ImageUrl="~/CapaVista/Imagenes/Cargar_Archivo.png" ToolTip="Cargar un Archivo" Width="45px" SkinID="FuncionCargarFile"/>
+
+<asp:ImageButton  runat="server" Height="45px" 
+ ImageUrl="~/CapaVista/Imagenes/Adicionar.png" ToolTip="Adicionar" Width="45px" SkinID="FuncionAdicionar"/>
+
+<asp:ImageButton  runat="server" Height="45px" 
+ ImageUrl="~/CapaVista/Imagenes/Flecha_Adelante.png" ToolTip="Ir Adelante" Width="45px" SkinID="FuncionIrAdelante"/>
+
+<asp:ImageButton  runat="server" Height="45px" 
+ ImageUrl="~/CapaVista/Imagenes/Flecha_Atras.png" ToolTip="Ir Atras" Width="45px" SkinID="FuncionIrAtras"/>
+
+
+
+
+<asp:Image runat="server" Height="30px" 
+ ImageUrl="~/CapaVista/Imagenes/FotoMiembro.png" Width="30px" SkinID="IconoMiembro"/>
+
+<asp:Image runat="server" Height="31px" 
+ ImageUrl="~/CapaVista/Imagenes/EmpresaMiembro.png" Width="28px" SkinID="IconoEmpresa"/>
+
+
+
+
+<asp:Image runat="server" Height="50px" 
+ ImageUrl="~/CapaVista/Imagenes/Logo Avizores SA.JPG" Width="240px" SkinID="LogoEmpresarialAvizores"/>

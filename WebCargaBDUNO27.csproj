@@ -1,0 +1,347 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3C589FA7-BFCD-44BB-BBEC-B0F0A3F09812}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebCargaBDUNO27</RootNamespace>
+    <AssemblyName>WebCargaBDUNO27</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="IrisSkin2, Version=2006.3.22.45, Culture=neutral, PublicKeyToken=f4d76dd8d689a256, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Componentes Graficos Vb2\SKIN NET 2010 WIN 7\SkinVS.NET\IrisSkin2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CapaControlador\C_CargarTabla.cs" />
+    <Compile Include="CapaModelo\ConexionBD.cs" />
+    <Compile Include="CapaVista\Page_Maestra_Cargador.Master.cs">
+      <DependentUpon>Page_Maestra_Cargador.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CapaVista\Page_Maestra_Cargador.Master.designer.cs">
+      <DependentUpon>Page_Maestra_Cargador.Master</DependentUpon>
+    </Compile>
+    <Compile Include="CapaVista\PaginaMenuBases.aspx.cs">
+      <DependentUpon>PaginaMenuBases.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CapaVista\PaginaMenuBases.aspx.designer.cs">
+      <DependentUpon>PaginaMenuBases.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CapaVista\PaginaMenuConsultar.aspx.cs">
+      <DependentUpon>PaginaMenuConsultar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CapaVista\PaginaMenuConsultar.aspx.designer.cs">
+      <DependentUpon>PaginaMenuConsultar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CapaVista\PaginaMenuConsultarCliente.aspx.cs">
+      <DependentUpon>PaginaMenuConsultarCliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CapaVista\PaginaMenuConsultarCliente.aspx.designer.cs">
+      <DependentUpon>PaginaMenuConsultarCliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CapaVista\PaginaMenuConsultarXEmail.aspx.cs">
+      <DependentUpon>PaginaMenuConsultarXEmail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CapaVista\PaginaMenuConsultarXEmail.aspx.designer.cs">
+      <DependentUpon>PaginaMenuConsultarXEmail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CapaVista\PaginaMenuConsultarXNombre.aspx.cs">
+      <DependentUpon>PaginaMenuConsultarXNombre.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CapaVista\PaginaMenuConsultarXNombre.aspx.designer.cs">
+      <DependentUpon>PaginaMenuConsultarXNombre.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CapaVista\PaginaMenuConsultarXTelefono.aspx.cs">
+      <DependentUpon>PaginaMenuConsultarXTelefono.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CapaVista\PaginaMenuConsultarXTelefono.aspx.designer.cs">
+      <DependentUpon>PaginaMenuConsultarXTelefono.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CapaVista\Pagina_WebPpal_Carga.aspx.cs">
+      <DependentUpon>Pagina_WebPpal_Carga.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CapaVista\Pagina_WebPpal_Carga.aspx.designer.cs">
+      <DependentUpon>Pagina_WebPpal_Carga.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CapaVista\PROBADOR_ERROR.aspx.cs">
+      <DependentUpon>PROBADOR_ERROR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CapaVista\PROBADOR_ERROR.aspx.designer.cs">
+      <DependentUpon>PROBADOR_ERROR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CapaVista\WebFormCargadorPrueba.aspx.cs">
+      <DependentUpon>WebFormCargadorPrueba.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CapaVista\WebFormCargadorPrueba.aspx.designer.cs">
+      <DependentUpon>WebFormCargadorPrueba.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CapaVista\WebMenuConsultarXCC_CargaBD.aspx.cs">
+      <DependentUpon>WebMenuConsultarXCC_CargaBD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CapaVista\WebMenuConsultarXCC_CargaBD.aspx.designer.cs">
+      <DependentUpon>WebMenuConsultarXCC_CargaBD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CapaVista\WebMenuConsultarXEmail_CargaBD.aspx.cs">
+      <DependentUpon>WebMenuConsultarXEmail_CargaBD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CapaVista\WebMenuConsultarXEmail_CargaBD.aspx.designer.cs">
+      <DependentUpon>WebMenuConsultarXEmail_CargaBD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CapaVista\WebMenuConsultarXNombre_CargaBD.aspx.cs">
+      <DependentUpon>WebMenuConsultarXNombre_CargaBD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CapaVista\WebMenuConsultarXNombre_CargaBD.aspx.designer.cs">
+      <DependentUpon>WebMenuConsultarXNombre_CargaBD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CapaVista\WebMenuConsultarXTel_CargaBD.aspx.cs">
+      <DependentUpon>WebMenuConsultarXTel_CargaBD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CapaVista\WebMenuConsultarXTel_CargaBD.aspx.designer.cs">
+      <DependentUpon>WebMenuConsultarXTel_CargaBD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CapaVista\WebMenuConsultar_CargaBD.aspx.cs">
+      <DependentUpon>WebMenuConsultar_CargaBD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CapaVista\WebMenuConsultar_CargaBD.aspx.designer.cs">
+      <DependentUpon>WebMenuConsultar_CargaBD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CapaVista\WebMenuPpal_CargaBD.aspx.cs">
+      <DependentUpon>WebMenuPpal_CargaBD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CapaVista\WebMenuPpal_CargaBD.aspx.designer.cs">
+      <DependentUpon>WebMenuPpal_CargaBD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CapaVista\WebPage_Carga_Prueba.aspx.cs">
+      <DependentUpon>WebPage_Carga_Prueba.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CapaVista\WebPage_Carga_Prueba.aspx.designer.cs">
+      <DependentUpon>WebPage_Carga_Prueba.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Clases\C_ClaseTabla.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CapaVista\Imagenes\Abrir.png" />
+    <Content Include="CapaVista\Imagenes\Adicionar.png" />
+    <Content Include="CapaVista\Imagenes\ajax-loader.gif" />
+    <Content Include="CapaVista\Imagenes\bg.png" />
+    <Content Include="CapaVista\Imagenes\Buscar2.png" />
+    <Content Include="CapaVista\Imagenes\Cargar_Archivo.png" />
+    <Content Include="CapaVista\Imagenes\Cerrar.png" />
+    <Content Include="CapaVista\Imagenes\Consultar_256.png" />
+    <Content Include="CapaVista\Imagenes\contacts.png" />
+    <Content Include="CapaVista\Imagenes\Eliminar.png" />
+    <Content Include="CapaVista\Imagenes\EmpresaMiembro.png" />
+    <Content Include="CapaVista\Imagenes\Flecha_Adelante.png" />
+    <Content Include="CapaVista\Imagenes\Flecha_Atras.png" />
+    <Content Include="CapaVista\Imagenes\forms.png" />
+    <Content Include="CapaVista\Imagenes\FotoMiembro.png" />
+    <Content Include="CapaVista\Imagenes\Grabar.png" />
+    <Content Include="CapaVista\Imagenes\Guardar2.png" />
+    <Content Include="CapaVista\Imagenes\Imprimir.png" />
+    <Content Include="CapaVista\Imagenes\Logo Avizores SA.JPG" />
+    <Content Include="CapaVista\Imagenes\Logo Presentacion.bmp" />
+    <Content Include="CapaVista\Imagenes\LOGO2.PNG" />
+    <Content Include="CapaVista\Imagenes\Logo_UAM.png" />
+    <Content Include="CapaVista\Imagenes\Logo_UMzales.png" />
+    <Content Include="CapaVista\Imagenes\Modificar_Datos.png" />
+    <Content Include="CapaVista\Imagenes\sep.png" />
+    <Content Include="CapaVista\Imagenes\UsuarioOficina1.png" />
+    <Content Include="CapaVista\Imagenes\UsuarioOficina2.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\HojaEstilo_PortalCarga.css" />
+    <Content Include="App_Themes\Skin_Botones_Portal_Carga\Skin_Botones_Portal_Carga.skin" />
+    <Content Include="CapaVista\Imagenes\AGENTES_CALL.png" />
+    <Content Include="CapaVista\Imagenes\AGENTES_CALL2.png" />
+    <Content Include="CapaVista\Imagenes\arrows.png" />
+    <Content Include="CapaVista\Imagenes\Bases_Datos_Banco_Icono.png" />
+    <Content Include="CapaVista\Imagenes\Bases_Datos_Banco_Icono_Small.png" />
+    <Content Include="CapaVista\Imagenes\box_bg.png" />
+    <Content Include="CapaVista\Imagenes\Buscar2_Small.png" />
+    <Content Include="CapaVista\Imagenes\camera-loader.gif" />
+    <Content Include="CapaVista\Imagenes\Cerrar_Small.png" />
+    <Content Include="CapaVista\Imagenes\ConsultarBases.png" />
+    <Content Include="CapaVista\Imagenes\ConsultarCliente.jpg" />
+    <Content Include="CapaVista\Imagenes\Consultar_3D_Icono.png" />
+    <Content Include="CapaVista\Imagenes\cont_bg.png" />
+    <Content Include="CapaVista\Imagenes\Database_Icono.png" />
+    <Content Include="CapaVista\Imagenes\Database_Icono_Small.png" />
+    <Content Include="CapaVista\Imagenes\Email.jpg" />
+    <Content Include="CapaVista\Imagenes\Email.png" />
+    <Content Include="CapaVista\Imagenes\Email_Small.png" />
+    <Content Include="CapaVista\Imagenes\Excel_DB_Definitivo.png" />
+    <Content Include="CapaVista\Imagenes\favicon.ico" />
+    <Content Include="CapaVista\Imagenes\Flecha_Atras_Small.png" />
+    <Content Include="CapaVista\Imagenes\form_Bg.png" />
+    <Content Include="CapaVista\Imagenes\FotoMiembro_Small.png" />
+    <Content Include="CapaVista\Imagenes\icon9.png" />
+    <Content Include="CapaVista\Imagenes\Icono_UNO27.png" />
+    <Content Include="CapaVista\Imagenes\log1.png" />
+    <Content Include="CapaVista\Imagenes\log2.png" />
+    <Content Include="CapaVista\Imagenes\log3.png" />
+    <Content Include="CapaVista\Imagenes\log4.png" />
+    <Content Include="CapaVista\Imagenes\logo.png" />
+    <Content Include="CapaVista\Imagenes\Logo_Colsubsidio.png" />
+    <Content Include="CapaVista\Imagenes\Logo_MenuPpal.png" />
+    <Content Include="CapaVista\Imagenes\Logo_UNO27.png" />
+    <Content Include="CapaVista\Imagenes\Logo_UNO27_3.png" />
+    <Content Include="CapaVista\Imagenes\marker.png" />
+    <Content Include="CapaVista\Imagenes\Nombre_Apellido.png" />
+    <Content Include="CapaVista\Imagenes\Nombre_Apellido_Small.png" />
+    <Content Include="CapaVista\Imagenes\page1_img1.jpg" />
+    <Content Include="CapaVista\Imagenes\page1_img2.jpg" />
+    <Content Include="CapaVista\Imagenes\page1_img3.jpg" />
+    <Content Include="CapaVista\Imagenes\page1_img4.jpg" />
+    <Content Include="CapaVista\Imagenes\page2_img1.jpg" />
+    <Content Include="CapaVista\Imagenes\page2_img2.jpg" />
+    <Content Include="CapaVista\Imagenes\page2_img3.jpg" />
+    <Content Include="CapaVista\Imagenes\page2_img4.jpg" />
+    <Content Include="CapaVista\Imagenes\page2_img5.jpg" />
+    <Content Include="CapaVista\Imagenes\page2_img6.jpg" />
+    <Content Include="CapaVista\Imagenes\page2_img7.jpg" />
+    <Content Include="CapaVista\Imagenes\page2_img8.jpg" />
+    <Content Include="CapaVista\Imagenes\page3_img1.jpg" />
+    <Content Include="CapaVista\Imagenes\page3_img2.jpg" />
+    <Content Include="CapaVista\Imagenes\page3_img3.jpg" />
+    <Content Include="CapaVista\Imagenes\page3_img4.jpg" />
+    <Content Include="CapaVista\Imagenes\page3_img5.jpg" />
+    <Content Include="CapaVista\Imagenes\page3_img6.jpg" />
+    <Content Include="CapaVista\Imagenes\prevnext.png" />
+    <Content Include="CapaVista\Imagenes\RegresarMenu.jpg" />
+    <Content Include="CapaVista\Imagenes\Server_Icono.png" />
+    <Content Include="CapaVista\Imagenes\Server_Icono_Small.png" />
+    <Content Include="CapaVista\Imagenes\slide.jpg" />
+    <Content Include="CapaVista\Imagenes\slide1.jpg" />
+    <Content Include="CapaVista\Imagenes\slide2.jpg" />
+    <Content Include="CapaVista\Imagenes\Telefono.png" />
+    <Content Include="CapaVista\Imagenes\Telefono_Small.png" />
+    <Content Include="CapaVista\PaginaMenuBases.aspx" />
+    <Content Include="CapaVista\PaginaMenuConsultar.aspx" />
+    <Content Include="CapaVista\PaginaMenuConsultarCliente.aspx" />
+    <Content Include="CapaVista\PaginaMenuConsultarXEmail.aspx" />
+    <Content Include="CapaVista\PaginaMenuConsultarXNombre.aspx" />
+    <Content Include="CapaVista\PaginaMenuConsultarXTelefono.aspx" />
+    <Content Include="CapaVista\Pagina_WebPpal_Carga.aspx" />
+    <Content Include="CapaVista\PROBADOR_ERROR.aspx" />
+    <Content Include="CapaVista\WebFormCargadorPrueba.aspx" />
+    <Content Include="CapaVista\WebMenuConsultarXCC_CargaBD.aspx" />
+    <Content Include="CapaVista\WebMenuConsultarXEmail_CargaBD.aspx" />
+    <Content Include="CapaVista\WebMenuConsultarXNombre_CargaBD.aspx" />
+    <Content Include="CapaVista\WebMenuConsultarXTel_CargaBD.aspx" />
+    <Content Include="CapaVista\WebMenuConsultar_CargaBD.aspx" />
+    <Content Include="CapaVista\WebMenuPpal_CargaBD.aspx" />
+    <Content Include="CapaVista\WebPage_Carga_Prueba.aspx" />
+    <Content Include="Global.asax" />
+    <None Include="CapaVista\Imagenes\Thumbs.db" />
+    <Content Include="CapaVista\Page_Maestra_Cargador.Master" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>62787</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

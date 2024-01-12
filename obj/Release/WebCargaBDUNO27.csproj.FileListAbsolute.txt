@@ -1,0 +1,6 @@
+D:\PROYECTOS SW_2015\WebCargaBDUNO27\WebCargaBDUNO27\bin\WebCargaBDUNO27.dll
+D:\PROYECTOS SW_2015\WebCargaBDUNO27\WebCargaBDUNO27\bin\WebCargaBDUNO27.pdb
+D:\PROYECTOS SW_2015\WebCargaBDUNO27\WebCargaBDUNO27\bin\IrisSkin2.dll
+D:\PROYECTOS SW_2015\WebCargaBDUNO27\WebCargaBDUNO27\obj\Release\ResolveAssemblyReference.cache
+D:\PROYECTOS SW_2015\WebCargaBDUNO27\WebCargaBDUNO27\obj\Release\WebCargaBDUNO27.dll
+D:\PROYECTOS SW_2015\WebCargaBDUNO27\WebCargaBDUNO27\obj\Release\WebCargaBDUNO27.pdb
